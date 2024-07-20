@@ -1,0 +1,268 @@
+body {
+    background-color: #E5E5E5;
+    font-family: "Inter", sans-serif;
+
+}
+
+.logo {
+    margin-top: 25px;
+}
+
+.contenedor-principal {
+    display: flex;
+
+    flex-wrap: wrap;
+
+
+}
+
+.texto-ingresado-botones {
+    width: 690px;
+    margin-left: 50px;
+    margin-top: 150px;
+
+}
+
+.texto-ingresado-texto {
+    font-family: "Inter", sans-serif;
+    color: darkblue;
+    font-weight: 300;
+    font-size: 32px;
+    background-color: #E5E5E5;
+    width: 690px;
+    height: 600px;
+    border: none;
+    outline: none;
+}
+
+.texto-ingresado-texto::placeholder {
+    color: darkblue;
+}
+
+#exclamacion {
+    color: gray;
+}
+
+.aclaraciones {
+    display: flex;
+    color: gray;
+    font-weight: 400;
+    font-size: 12px;
+    align-items: center;
+    gap: 10px;
+}
+
+.botones {
+    display: flex;
+
+    gap: 30px;
+
+}
+
+.botones-principales {
+
+    width: 310px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#boton1 {
+    background-color: darkblue;
+    color: #D8DFE8;
+
+}
+
+#boton2 {
+    background-color: #D8DFE8;
+    color: darkblue;
+}
+
+.texto-salida {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 32px;
+    width: 400px;
+    height: 944px;
+    margin-left: 50px;
+    margin-top: 40px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.texto-salida1 {}
+
+.texto-mensaje {
+    width: 336px;
+}
+
+.mensaje {
+    color: gray;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mensaje-2 {
+    color: gray;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.texto-salida-out {
+    display: none;
+}
+
+.texto-convertido-estilo {
+
+    padding: 20px !important;
+    display: flex;
+    text-align: left !important;
+    align-items: start !important;
+    justify-content: start !important;
+    font-family: "Inter", sans-serif;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    height: 600px !important;
+    width: 350px !important;
+    margin-bottom: 90px !important;
+    border: none;
+    outline: none;
+
+}
+
+.botonCopiar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    color: darkblue;
+    background-color: white;
+    border-radius: 24px;
+    border-color: darkblue;
+    margin-bottom: 120px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(18, 18, 102, 0.704);
+    color: white;
+    font-size: 16px;
+
+    margin-top: 25px;
+    height: 60px;
+    border-radius: 24px;
+}
+
+#miDiv {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .imagen {
+        display: none;
+    }
+
+    .texto-salida {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 32px;
+        width: 650px;
+        height: 400px;
+
+
+    }
+
+
+    .texto-convertido-estilo {
+        margin-top: 10px !important;
+        padding: 20px !important;
+        display: flex;
+        text-align: left !important;
+        align-items: start !important;
+        justify-content: start !important;
+        font-family: "Inter", sans-serif;
+        font-size: 20px !important;
+        font-weight: 300 !important;
+        height: 400px !important;
+        width: 600px !important;
+        border-radius: 36px;
+        /* margin-bottom: 90px !important; */
+
+
+    }
+
+    #texto-salida1 {
+        height: 380px !important;
+        width: 600px !important;
+
+    }
+
+    .texto-ingresado-texto {
+
+        width: 650px;
+        height: 500px;
+        border: none;
+        outline: none;
+    }
+
+    .botonCopiar {
+        margin-bottom: 15px !important;
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .botones {
+        flex-direction: column;
+    }
+
+    .texto-ingresado-texto {
+
+        width: 360px;
+        height: 400px;
+
+    }
+
+    .texto-ingresado-botones {
+        width: 360px;
+        margin-left: 25x;
+        margin-top: 150px;
+
+    }
+
+    .texto-salida {
+        margin-left: 25px;
+        width: 360px;
+        height: 400px;
+
+
+    }
+
+    .botonCopiar {
+        margin-bottom: 15px !important;
+        width: 320px;
+    }
+
+    #texto-salida1 {
+        height: 380px !important;
+        width: 320px !important;
+
+    }
+}

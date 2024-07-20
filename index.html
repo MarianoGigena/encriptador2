@@ -3,37 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
+    <link type="image/png" sizes="16x16" rel="icon" href="./imgs/icons8-traducción-16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Encriptador</title>
 </head>
 
 <body>
+    <div class="logo">
+        <img src="./imgs/Logo.png" alt="Logo">
+    </div>
     <div class="contenedor-principal">
-        <div class="logo">
 
-        </div>
         <div class="texto-ingresado-botones">
-            <div class="texto-ingresado">
 
+            <div class="texto-ingresado">
+                <textarea class="texto-ingresado-texto" id="texto-a-transformar"
+                    placeholder="Ingrese el texto aqui"></textarea>
             </div>
             <div class="aclaraciones">
-
+                <img id="exclamacion" src="./imgs/bi--exclamation-circle-fill.svg" alt="Exclamación">
+                <p id="restriccion">Solo texto en minusculas y sin acento.</p>
             </div>
             <div class="botones">
-
+                <button class="botones-principales" id="boton1">Encriptar</button>
+                <button class="botones-principales" id="boton2">Desencriptar</button>
             </div>
 
         </div>
         <div class="texto-salida">
-            <div class="imagen">
+            <div id="miDiv">Texto copiado</div>
+            <textarea class="texto-salida-out" id="texto-salida1"></textarea>
+
+            <div id="boton-copiar"></div>
+            <div id="caja-contenido">
+                <div class="imagen">
+                    <img src="./imgs/Muñeco.png" alt="chica">
+                </div>
+                <div class="texto-mensaje">
+                    <p class="mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="mensaje-2">Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+
 
             </div>
-            <div class="texto-mensaje">
 
-            </div>
         </div>
 
     </div>
+    <footer>Desarrollado por Mariano Gigena. 2024</footer>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
