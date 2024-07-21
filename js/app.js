@@ -85,7 +85,7 @@ function copiar() {
         navigator.clipboard.writeText(texto).then(function () {
             console.log('Texto copiado al portapapeles');
             mostrarDiv()
-            var audio = new Audio('./audio/mario-bros-1-up.mp3');
+            var audio = new Audio('./audio/camara_5.mp3');
             audio.play();
         }).catch(function (err) {
             console.error('No se pudo copiar el texto: ', err);
